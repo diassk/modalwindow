@@ -1,0 +1,49 @@
+body {
+    background: url("../img/tt700.jpg") no-repeat center/cover;
+}
+
+.inputModal{
+    display: none;
+}
+
+#modal:checked ~.modal{
+    height: 500px;
+}
+
+.modalBtn{
+    padding: 10px 15px;
+    border-radius: 15px;
+    background: rgb(63,94,251);
+    background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
+    color: white;
+    -webkit-box-shadow: 21px 18px 25px -15px rgba(0, 0, 0, 0.6);
+    -moz-box-shadow: 21px 18px 25px -15px rgba(0, 0, 0, 0.6);
+    box-shadow: 21px 18px 25px -15px rgba(0, 0, 0, 0.6);
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+.modalBtn:active{
+    background: black;
+    color: white;
+    border: solid 1px white;
+    transition: 0.2s;
+}
+
+.center{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 500px;
+}
+
+.modal{
+    width: 400px;
+    height: 0;
+    overflow: hidden;
+    background: rgba(255, 255, 255, 0.38);
+    color: white;
+    border-bottom-left-radius: 50px;
+    border-top-right-radius: 50px;
+    transition: 2s;
+}
